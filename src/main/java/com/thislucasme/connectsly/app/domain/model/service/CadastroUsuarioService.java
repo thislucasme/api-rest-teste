@@ -31,7 +31,7 @@ public class CadastroUsuarioService {
 			Long  idSorteado = Sortear.randomLong(1L, totalUsuarios+1);
 			Optional<Usuario> usuarioAtual = usuarioRepository.findById(idSorteado);
 			
-			if(!usuarioAtual.isEmpty()) {
+			if(usuarioAtual.isPresent()) {
 				usuariosSorteados.add(usuarioAtual.get());
 			}
 		}
