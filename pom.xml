@@ -13,7 +13,9 @@
 	<version>0.0.1-CONNECTSLY</version>
 	<name>Connectsly-API</name>
 	<description>Connectsly API</description>
-
+	<properties>
+		<java.version>8</java.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
